@@ -1,4 +1,4 @@
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export PS1="\[\033[0;32m\]\h:\[\033[37;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=~/Library/Python/3.6/bin:/usr/bin:/usr/sbin:/bin:/sbin/:/usr/local/bin
@@ -7,3 +7,5 @@ alias ls='ls -GFh'
 alias senv='source env/bin/activate'
 alias prof='code ~/.bash_profile'
 alias sprof='source ~/.bash_profile'
+alias cprof='cp ~/.bash_profile ~/dotfiles/.bash_profile && git --git-dir ~/dotfiles/.git add .bash_profile && git commit && git push'
+alias chrome='open -a "Google Chrome" $1'
